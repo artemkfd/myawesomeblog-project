@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
-    'events'
+    'blog.apps.BlogConfig',
+    'events.apps.EventsConfig'
 ]
 
 MIDDLEWARE = [
