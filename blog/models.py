@@ -7,6 +7,9 @@ class Blog(models.Model):
     text = models.TextField()
     image = models.ImageField(upload_to='event_images/')
 
+    def __str__(self):
+        return self.title
+
     def get_summary(self):
         sum_text = self.text[:70] + '...'
         return sum_text
